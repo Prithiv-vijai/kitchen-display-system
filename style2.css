@@ -1,0 +1,187 @@
+/* style2.css */
+
+body {
+    font-family: 'Poppins', sans-serif; /* Use Roboto font */
+    background-color: #41c3ff;
+    margin: 0;
+    padding: 10px;
+}
+
+
+.navbar-horizontal {
+    background-color: #333;
+    color: white;
+    padding: 10px; /* Increased padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px; /* Increased height */
+}
+
+.user-icon {
+    display: flex;
+    align-items: center;
+   
+    margin-left: 20px;  /* Added margin */
+}
+h1{
+    margin-left: 20px;
+}
+.user-icon img {
+    
+    margin-right: 0px;
+    width: 65px;
+    height: 65px;
+}
+
+.user-icon span {
+    font-size: 1.8rem; /* Adjust text size */
+}
+
+
+
+
+.order-counts {
+    text-align: right;
+    color: #67a4ff;
+    margin-right: 20px; /* Added margin */
+}
+
+.order-counts > div {
+    margin-bottom: 0px; /* Added margin between counts */
+}
+
+.order-counts .highlight {
+    font-weight: bold;
+    color: #83b5ff;
+
+
+}
+
+.order-counts .count {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.3rem; /* Increased font size */
+}
+
+.container {
+    display: flex;
+    justify-content:center;
+    margin-top: 5px;
+    padding: 0px;
+}
+
+.section {
+    flex: 1;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    
+}
+#hold-list
+{
+    margin-right: 5px; /* Added margin */
+}
+#progress-list
+{
+    margin-right: 5px; /* Added margin */
+}
+
+h2 {
+    margin-top: 0;
+    margin-left: 130px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: #333333;
+}
+
+.order-list {
+    list-style-type:none;
+    padding: 0;
+}
+
+.order {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #d5e5f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+}
+
+.order:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.order-details {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.order img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.order-name {
+    flex: 1;
+}
+
+.order-actions {
+    display: flex;
+    align-items: center;
+}
+
+.order-actions button {
+    padding: 8px 16px;
+    margin-left:330px;
+
+    background-color: #297fff; /* Green color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Add some gap above each button */
+}
+
+
+.order-actions button:hover {
+    background-color: #1ba232; /* Darker green color */
+}
+
+
+
+
+.order-details span:nth-child(2) {
+    font-style: italic; /* Make the second span italic */
+}
+
+.order-details span:first-child {
+    font-weight: bold; /* Make the first span bold */
+}
+
+.order-details {
+    display: flex;
+    flex-direction: column; /* Display items vertically */
+    align-items: flex-start; /* Align items to the start */
+    margin-top: 20px; /* Add some space between order info and details */
+}
+
+.table-time {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    width: 90%; /* Half of the container width */
+}
+
+.order-details-description span {
+    font-weight: normal; /* Remove bold style for order details */
+}
+
+.order-details-description {
+    margin-top: 10px; /* Add some space between order info and details */
+}
+

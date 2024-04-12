@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginstyle.css"> <!-- Link to the CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="section">
+        <h2>LOGIN</h2>
+        <form id="loginForm">
+            <div class="order-details">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="order-details password-toggle">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <img class="toggle-icon" src="image/eye.png" width="50px" height="40px"alt="Toggle Password Visibility">
+            </div>
+            <div class="order-actions">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        if (username === 'waiter' && password === 'waiter') {
+            window.location.href = 'index.html'; // Redirect to index.html for waiter
+        } else if (username === 'chef' && password === 'chef') {
+            window.location.href = 'chef.html'; // Redirect to chef.html for chef
+        } else {
+            alert('Invalid username or password.'); // Show alert for invalid credentials
+        }
+    });
+
+    // Toggle password visibility
+    document.querySelector('.toggle-icon').addEventListener('click', function() {
+        var passwordInput = document.getElementById('password');
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+        } else {
+            passwordInput.type = 'password';
+        }
+    });
+</script>
+
+</body>
+</html>

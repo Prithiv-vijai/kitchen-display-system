@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+
+    <title>CHEF SIDE</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Horizontal navigation bar -->
+    <nav class="navbar-horizontal">
+        <div class="user-icon">
+            <a href="login.html"><img src="image/user.png" width="65px" height="65px" alt="User Icon"></a>
+        </div>
+        <div>
+            <h1>KITCHEN DISPLAY SYSTEM</h1>
+        </div>
+        
+        <div class="order-counts">
+            <div><span class="highlight">ON HOLD:</span> <span id="hold-count" class="count">0</span></div>
+            <div><span class="highlight">PROGRESS:</span> <span id="progress-count" class="count">0</span></div>
+            <div><span class="highlight">COMPLETED:</span> <span id="completed-count" class="count">0</span></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="section navbar-vertical" id="hold-list">
+            <h2><span class="highlight">Orders On Hold</span></h2>
+            <ul class="order-list" id="hold-orders">
+                <!-- Your hold orders will go here -->
+            </ul>
+        </div>
+
+        <div class="section navbar-vertical" id="progress-list">
+            <h2><span class="highlight">Orders In Progress</span></h2>
+            <ul class="order-list" id="progress-orders">
+                <!-- Your progress orders will go here -->
+            </ul>
+        </div>
+
+        <div class="section navbar-vertical" id="completed-list">
+            <h2><span class="highlight">Orders Completed</span></h2>
+            <ul class="order-list" id="completed-orders">
+                <!-- Your completed orders will go here -->
+            </ul>
+        </div>
+    </div>
+    <!-- Slide-in login form -->
+
+  
+    <script src="app2.js"></script>
+    
+</body>
+</html>

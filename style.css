@@ -1,0 +1,231 @@
+body {
+    background-color: #41c3ff; /* Blue background color */
+    font-family: 'Poppins', sans-serif; /* Use Roboto font */
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar-horizontal {
+    background-color: #333; /* Black navigation bar */
+    color: white;
+    padding: 10px; /* Increased padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px; /* Increased height */
+    position: relative; /* Add relative positioning */
+}
+
+.navbar-horizontal h1 {
+    margin: 0 auto;
+    text-align: center;
+}
+.user-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Added margin */
+}
+
+.user-icon img {
+    margin-right: 0px;
+    width: 65px;
+    height: 65px;
+}
+
+.user-icon span {
+    font-size: 1.8rem; /* Adjust text size */
+}
+
+.navbar-horizontal .shopping {
+    position: relative; /* Change position to relative */
+    right: unset; /* Remove the right position */
+}
+
+.navbar-horizontal .shopping img {
+    content: url('image/cart.png');
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+.navbar-horizontal .shopping span {
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    right: 0px; /* Adjust the position */
+    padding: 3px 6px; /* Adjust padding */
+    font-size: 0.8rem; /* Adjust font size */
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+}
+
+.list .item {
+    text-align: center;
+    background-color: #DCE0E1;
+    padding: 20px;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+}
+
+.list .item img {
+    width: 90%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.list .item .title {
+    font-weight: 600;
+}
+
+.list .item .price {
+    margin: 10px;
+}
+
+.list .item button {
+    background-color: #1C1F25;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+
+.card {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    background-color: #333;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.active .card {
+    left: calc(100% - 500px);
+}
+
+.active .container {
+    transform: translateX(-200px);
+}
+
+.card h1 {
+    color: #41c3ff;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.card .checkOut {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card .checkOut div {
+    background-color: #41c3ff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card .checkOut div:nth-child(2) {
+    background-color: #1C1F25;
+    color: #fff;
+}
+
+.listCard li {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+
+.listCard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listCard li img {
+    width: 90%;
+}
+
+.listCard li button {
+    background-color: #fff5;
+    border: none;
+}
+
+.listCard .count {
+    margin: 0 10px;
+}
+
+.tables {
+    display: flex;
+    gap: 180px;
+}
+
+.tables label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px; /* Adjust the margin as needed */
+    line-height: 1.5;
+}
+
+.tables input[type="radio"] {
+    display: none;
+}
+
+.tables label .custom-radio {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    position: relative;
+    margin-right: 5px;
+    flex-shrink: 0;
+}
+
+.tables input[type="radio"]:checked + label .custom-radio {
+    background-color: #555;
+    animation: radio-pop 0.3s ease;
+}
+
+@keyframes radio-pop {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

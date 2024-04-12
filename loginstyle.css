@@ -1,0 +1,103 @@
+/* loginstyle.css */
+
+body {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    background-color: #41c3ff; /* Set background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Ensure full viewport height */
+}
+
+.container {
+    width: 400px; /* Set a fixed width for the container */
+    background-color: #ffffff; /* White background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    padding: 30px; /* Increased padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.navbar-horizontal {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px; /* Increased padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+    height: 80px; /* Increased height */
+}
+
+
+h2 {
+    margin-top: 0;
+    align-self: center;
+    margin-bottom: 20px; /* Added margin */
+    font-size: 2.4rem; /* Increased font size */
+    color: #333333; /* Dark text color */
+    margin-left: 150px;
+    padding-block: 20px;
+}
+
+.order-details {
+    margin-bottom: 20px; /* Added margin */
+   
+
+}
+
+.order-details label {
+    font-weight: bold; /* Make the label bold */
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #297fff; /* Blue border color on focus */
+}
+
+/* Style for the password toggle icon */
+.password-toggle {
+    position: relative;
+}
+
+.password-toggle input[type="password"] {
+    padding-right: 30px;
+}
+
+.password-toggle .toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.order-actions button {
+    padding: 17px 175px; /* Increased padding */
+    font-size: 1.2rem;
+    margin-top: 20px;
+    background-color: #448efd; /* Blue color */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-actions button:hover {
+    background-color: #1ba232; /* Darker green color on hover */
+}
