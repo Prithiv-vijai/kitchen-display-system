@@ -1,11 +1,11 @@
 body {
-    background-color: #41c3ff; /* Blue background color */
+    background-color: #41ff93; /* Blue background color */
     font-family: 'Poppins', sans-serif; /* Use Roboto font */
     margin: 0;
     padding: 10px;
 }
 
-.navbar-horizontal {
+.navbar-horizontal {gt
     background-color: #333; /* Black navigation bar */
     color: white;
     padding: 10px; /* Increased padding */
