@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Poppins', sans-serif; /* Use Poppins font */
-    background-color: #41ff54; /* Set background color */
+    background-color: #41c3ff; /* Set background color */
     margin: 0;
     padding: 0;
     display: flex;
@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-horizontal {
-    background-color: #333; /* Dark background color */
+    background-color: #d43636; /* Dark background color */
     color: white; /* White text color */
     padding: 20px; /* Increased padding */
     display: flex;
